@@ -1,7 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./assets/**/*.{html,js,woff,woff2}",
-            "./index.html"],
+            "./index.html",
+            "./node_modules/flowbite/**/*.js"],
   theme: {
     extend: {
       colors: {
@@ -11,11 +12,17 @@ module.exports = {
         'txt-gray-4':'#454B5F',
         'offwhite-4':'#D8DEEC',
         'offwhite-3':'#EDF0F6',
+        'offwhite-5':'#BDC4D3',
         'off-blue-3':'#EAEFFC',
         'txt-maroon':'#B3293D',
         'maroon-border':'#b76672',
         'chat-bg': '#BB253B',
+        'linear-pink':'#C33764',
+        'linear-purple':'#1D2671'
       },
+      boxShadow: {
+        'md': '0px 2px 4px 0px rgba(70, 76, 94, 0.12)',
+      }
     },
     variants: {
       fill: ['hover', 'focus'], // this line does the trick
@@ -24,6 +31,8 @@ module.exports = {
       'Inter':['Inter', 'sans-serif']
     },
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+  ],
 }
 
