@@ -595,6 +595,10 @@ video {
   left: 50%;
 }
 
+.-top-\[4\%\] {
+  top: -4%;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -692,6 +696,10 @@ video {
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 
 .border-4 {
