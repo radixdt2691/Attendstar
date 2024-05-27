@@ -17,3 +17,25 @@
 body{
     font-family: 'Inter',sans-serif;
 }
+
+/* width */
+#account::-webkit-scrollbar {
+    width: 4px;
+}
+ 
+/* Track */
+#account::-webkit-scrollbar-track {
+    background: #D8DEEC;
+    border-radius: 4px;
+}
+ 
+/* Handle */
+#account::-webkit-scrollbar-thumb {
+    background: #6C7287;
+    border-radius: 4px;
+}
+ 
+/* Handle on hover */
+#account::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
